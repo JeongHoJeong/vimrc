@@ -23,6 +23,11 @@ nnoremap <C-I> i <ESC>r
 " remap Shift-Enter to exit insert mode
 imap <S-CR> <ESC>
 
+nnoremap <F2> :setlocal rnu!<CR>
+
+" set current path as working directory
+map <F4> :cd %:p:h<CR>
+
 if has("gui_running")
   " for move between splits (Ctrl+Shift+Left, Ctrl+Shift+Up ...)
   nmap <C-S-RIGHT> <C-w><Right>
