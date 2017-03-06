@@ -28,8 +28,8 @@ Plugin 'posva/vim-vue'
 call vundle#end()
 filetype plugin indent on
 
-source plugins/ctrlp.vimrc
-source plugins/neocomplete.vimrc
-source plugins/NERDTree.vimrc
-source plugins/syntastic.vimrc
-source plugins/vim_better_whitespace.vimrc
+execute 'source' expand('<sfile>:p:h') . '/plugins/ctrlp.vimrc'
+execute 'source' expand('<sfile>:p:h') . '/plugins/neocomplete.vimrc'
+execute 'source' expand('<sfile>:p:h') . '/plugins/NERDTree.vimrc'
+execute 'source' expand('<sfile>:p:h') . '/plugins/syntastic.vimrc'
+execute 'source' expand('<sfile>:p:h') . '/plugins/vim_better_whitespace.vimrc'
